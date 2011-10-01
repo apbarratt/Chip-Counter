@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chip Counter</string>
+    <string name="numChips">Number of Chips</string>
+    <string name="calculate">Calculate</string>
+    <string name="noChipsSet">Welcome to Chip Counter by Andy Barratt.\n\nFirst you need to set the values of the chips in your game.\n\nJust click below to do that now :)</string>
+    <string name="setValues">Set Chip Values</string>
+    <string name="websiteURL">www.andybarratt.co.uk</string>
+    <string name="value">Value</string>
+    <string name="saveValues">Save Values</string>
+</resources>
