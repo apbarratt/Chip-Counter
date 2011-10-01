@@ -15,6 +15,7 @@ public class ChipCounterActivity extends CustomActivity
     {
         super.onCreate(savedInstanceState);
         
+        Log.v(TAG, "Checking number of chips");
         if(loadChipValues()==false)
         {
         	setContentView(R.layout.no_chips);
@@ -26,7 +27,6 @@ public class ChipCounterActivity extends CustomActivity
         			Log.v(TAG, "Set Chip Values button pressed.");
         			Intent myIntent = new Intent(view.getContext(), setValues.class);
 	                startActivityForResult(myIntent, 0);
-	                finish();
         		}
         	});
         }
