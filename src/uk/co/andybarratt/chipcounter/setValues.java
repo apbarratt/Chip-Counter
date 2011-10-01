@@ -1,10 +1,8 @@
 package uk.co.andybarratt.chipcounter;
-
-import android.app.Activity;
 import android.os.Bundle;
 
 
-public class setValues extends Activity
+public class setValues extends CustomActivity
 {
 	public static final String TAG = "ChipCounter";
 	Chip [] chips = null;

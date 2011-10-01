@@ -1,6 +1,5 @@
 package uk.co.andybarratt.chipcounter;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,18 +7,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class ChipCounterActivity extends Activity
-{
-	public static final String TAG = "ChipCounter";
-	Chip [] chips = null;
-	
+public class ChipCounterActivity extends CustomActivity
+{	
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         
-        if(chips==null)
+        if(loadChipValues()==false)
         {
         	setContentView(R.layout.no_chips);
         	Log.v(TAG, "No Chips Set, showing welcome screen.");
@@ -30,6 +26,7 @@ public class ChipCounterActivity extends Activity
         			Log.v(TAG, "Set Chip Values button pressed.");
         			Intent myIntent = new Intent(view.getContext(), setValues.class);
 	                startActivityForResult(myIntent, 0);
+	                finish();
         		}
         	});
         }
