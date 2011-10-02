@@ -65,7 +65,7 @@ public class setValuesActivity extends CustomActivity
     	btnSaveValues.setOnClickListener(new OnClickListener() {
     		@Override
     		public void onClick(final View view) {
-    			Log.v(TAG, "Save Values button pressed.");
+    			Log.d(TAG, "Save Values button pressed.");
     			
     			SharedPreferences.Editor editor = settings.edit();
 

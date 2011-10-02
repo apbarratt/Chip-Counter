@@ -8,5 +8,6 @@
     <string name="websiteURL">www.andybarratt.co.uk</string>
     <string name="value">Value (e.g. 0.10)</string>
     <string name="saveValues">Save Values</string>
-    <string name="total">Total</string>
+    <string name="total">Your Total</string>
+    <string name="ok">OK</string>
 </resources>

@@ -1,6 +1,7 @@
 package uk.co.andybarratt.chipcounter;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -21,16 +22,16 @@ public class MainActivity extends CustomActivity
     {
         super.onCreate(savedInstanceState);
         
-        Log.v(TAG, "Checking number of chips");
+        Log.d(TAG, "Checking number of chips");
         if(loadChipValues()==false)
         {
         	setContentView(R.layout.no_chips);
-        	Log.v(TAG, "No Chips Set, showing welcome screen.");
+        	Log.d(TAG, "No Chips Set, showing welcome screen.");
         	final Button btnSetValues = (Button) findViewById(R.id.btnSetValues); //initialise set values button
         	btnSetValues.setOnClickListener(new OnClickListener() {
         		@Override
         		public void onClick(final View view) {
-        			Log.v(TAG, "Set Chip Values button pressed.");
+        			Log.d(TAG, "Set Chip Values button pressed.");
         			Intent myIntent = new Intent(view.getContext(), setValuesActivity.class);
 	                startActivityForResult(myIntent, 0);
         		}
@@ -39,7 +40,7 @@ public class MainActivity extends CustomActivity
         else
         {
         	setContentView(R.layout.main);
-        	Log.v(TAG, "Chips found, showing main layout.");
+        	Log.d(TAG, "Chips found, showing main layout.");
         	
         	
         	LinearLayout chipsLayout = (LinearLayout) findViewById(R.id.chips);
@@ -72,7 +73,7 @@ public class MainActivity extends CustomActivity
         	btnCalculate.setOnClickListener(new OnClickListener() {
         		@Override
         		public void onClick(final View view) {
-        			Log.v(TAG, "Calculate Button Pressed");
+        			Log.d(TAG, "Calculate Button Pressed");
         			calculate(numChips);
         		}
         	});
@@ -81,7 +82,7 @@ public class MainActivity extends CustomActivity
     
     public void calculate(EditText [] numChips)
     {
-    	Log.v(TAG, "Calculate Method Started");
+    	Log.d(TAG, "Calculate Method Started");
     	
     	float total = 0;
     	
@@ -102,6 +103,14 @@ public class MainActivity extends CustomActivity
     	final AlertDialog alertDialog = new AlertDialog.Builder(this).create(); // make an alert dialogue		
 		alertDialog.setTitle(getString(R.string.total));
 		alertDialog.setMessage(formattedTotal);
+		
+		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				alertDialog.dismiss();
+			}
+		});
+		
 		alertDialog.show();
     }
 }
