@@ -6,6 +6,7 @@
     <string name="noChipsSet">Welcome to Chip Counter by Andy Barratt.\n\nFirst you need to set the values of the chips in your game.\n\nJust click below to do that now :)</string>
     <string name="setValues">Set Chip Values</string>
     <string name="websiteURL">www.andybarratt.co.uk</string>
-    <string name="value">Value</string>
+    <string name="value">Value (e.g. 0.10)</string>
     <string name="saveValues">Save Values</string>
+    <string name="total">Total</string>
 </resources>

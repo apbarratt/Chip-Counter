@@ -2,21 +2,21 @@ package uk.co.andybarratt.chipcounter;
 
 public class Chip {
 	
-	private String drawable;
+	private int drawable;
 	private float value;
 	
-	public Chip(String drawable, float value)
+	public Chip(int drawable, float value)
 	{
 		this.drawable = drawable;
 		this.value = value;
 	}
 
-	public String getDrawable()
+	public int getDrawable()
 	{
 		return drawable;
 	}
 	
-	public void setDrawable(String drawable)
+	public void setDrawable(int drawable)
 	{
 		this.drawable = drawable;
 	}

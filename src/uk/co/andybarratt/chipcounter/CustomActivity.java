@@ -15,7 +15,7 @@ import android.view.MenuItem;
 public class CustomActivity extends Activity
 {
 	public static final String TAG = "ChipCounter";
-	public static final DecimalFormat dec = new DecimalFormat("###.##");
+	public static final DecimalFormat dec = new DecimalFormat("##0.00");
 	
 	protected SharedPreferences settings;
 	protected Chip [] chips = new Chip [11];
@@ -44,7 +44,7 @@ public class CustomActivity extends Activity
         	
         	//get data from settings object and read it, set defaults where values not available
         	float chipValue = settings.getFloat(valueName, 0);
-        	String chipDrawable = settings.getString(drawableName, "none");
+        	int chipDrawable = settings.getInt(drawableName, 0);
         	
         	//put data into chips array.
         	chips[i] = new Chip(chipDrawable, chipValue);
@@ -74,7 +74,7 @@ public class CustomActivity extends Activity
         switch(item.getItemId()) {
             case R.id.menuSetValues:
             	Log.v(TAG, "Set Chip Values menu button pressed.");
-    			Intent myIntent = new Intent(this, setValues.class);
+    			Intent myIntent = new Intent(this, setValuesActivity.class);
                 startActivityForResult(myIntent, 0);
                 break;
             default:
