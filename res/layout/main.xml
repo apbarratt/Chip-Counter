@@ -17,13 +17,13 @@
 	    android:layout_height="wrap_content" 
 	    android:text="@string/app_name"
 	    android:textColor="#ffffff"
-	    android:textSize="20sp"
+	    android:textSize="20dp"
 	    android:textStyle="bold"
 	    android:typeface="sans"
 	    android:gravity="center_horizontal"
 	    android:background="#990000"
-	    android:padding="5sp"
-	    android:layout_marginBottom="10sp"
+	    android:padding="5dp"
+	    android:layout_marginBottom="10dp"
 	    />
 	    
     <LinearLayout
@@ -38,12 +38,12 @@
 		android:id="@+id/btnCalculate"
 		android:background="#990000"
 		android:layout_width="fill_parent"
-		android:textSize="20sp"
+		android:textSize="20dp"
 	    android:textStyle="bold"
 	    android:typeface="sans"
 	    android:textColor="#ffffff"
-		android:layout_height="50sp"
-		android:layout_margin="10sp">
+		android:layout_height="50dp"
+		android:layout_margin="10dp">
 	</Button>
 	
 	<TextView  
@@ -51,9 +51,9 @@
 	    android:layout_height="fill_parent" 
 	    android:text="@string/websiteURL"
 	    android:textColor="#ffffff"
-	    android:textSize="14sp"
+	    android:textSize="14dp"
 	    android:typeface="sans"
-	    android:padding="5sp"
+	    android:padding="5dp"
 	    android:gravity="center_horizontal|bottom"/>
 		    
 </LinearLayout>

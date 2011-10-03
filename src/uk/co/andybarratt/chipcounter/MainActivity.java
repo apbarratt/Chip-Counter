@@ -49,9 +49,10 @@ public class MainActivity extends CustomActivity
         	
         	for(int i=0; i<11; i++)
         	{
+        		int pixels = convertToPixels(50);
         		numChips[i] = new EditText(this);
 					numChips[i].setHint(getString(R.string.numChips));
-					numChips[i].setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, 50));
+					numChips[i].setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, pixels));
 					numChips[i].setInputType(InputType.TYPE_CLASS_NUMBER);
 					
         		if(chips[i].getValue()>0)
@@ -59,7 +60,7 @@ public class MainActivity extends CustomActivity
         			ImageView chipImage = new ImageView(this);
         				chipImage.setImageResource(chips[i].getDrawable());
         				chipImage.setAdjustViewBounds(true);
-        				chipImage.setMaxWidth(50);
+        				chipImage.setMaxWidth(pixels);
         			
 	        		LinearLayout chip = new LinearLayout(this);
 	        			chip.setPadding(10,10,10,10);

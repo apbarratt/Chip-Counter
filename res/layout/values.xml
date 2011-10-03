@@ -16,30 +16,30 @@
 		    android:layout_height="wrap_content" 
 		    android:text="@string/app_name"
 		    android:textColor="#ffffff"
-		    android:textSize="20sp"
+		    android:textSize="20dp"
 		    android:textStyle="bold"
 		    android:typeface="sans"
 		    android:gravity="center_horizontal"
 		    android:background="#990000"
-		    android:padding="5sp"
-		    android:layout_marginBottom="10sp" />
+		    android:padding="5dp"
+		    android:layout_marginBottom="10dp" />
     
 		<LinearLayout
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/blue"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/blueValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -47,18 +47,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/green"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/greenValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -66,18 +66,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/lightblue"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/lightblueValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -85,18 +85,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/orange"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/orangeValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -104,18 +104,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/pink"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/pinkValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -123,18 +123,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/purple"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/purpleValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -142,18 +142,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/red"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/redValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -161,18 +161,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/yellow"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/yellowValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -180,18 +180,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/white"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/whiteValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -199,18 +199,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/black"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/blackValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -218,18 +218,18 @@
 			android:orientation="horizontal"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
-			android:layout_margin="10sp">
+			android:layout_margin="10dp">
 				<ImageView
-					android:layout_marginRight="10sp"
-					android:layout_height="50sp"
+					android:layout_marginRight="10dp"
+					android:layout_height="50dp"
 					android:src="@drawable/gray"
-					android:layout_width="50sp">
+					android:layout_width="50dp">
 				</ImageView>
 				<EditText
 					android:id="@+id/grayValue"
 					android:inputType="numberDecimal"
 					android:layout_width="fill_parent"
-					android:layout_height="50sp"
+					android:layout_height="50dp"
 					android:hint="@string/value" />
 		</LinearLayout>
 		
@@ -240,12 +240,12 @@
 			android:id="@+id/btnSaveValues"
 			android:background="#990000"
 			android:layout_width="fill_parent"
-			android:textSize="20sp"
+			android:textSize="20dp"
 		    android:textStyle="bold"
 		    android:typeface="sans"
 		    android:textColor="#ffffff"
-			android:layout_height="50sp"
-			android:layout_margin="10sp">
+			android:layout_height="50dp"
+			android:layout_margin="10dp">
 		</Button>
 		
 	
@@ -255,9 +255,9 @@
 		    android:layout_height="wrap_content" 
 		    android:text="@string/websiteURL"
 		    android:textColor="#ffffff"
-		    android:textSize="14sp"
+		    android:textSize="14dp"
 		    android:typeface="sans"
-		    android:padding="5sp"
+		    android:padding="5dp"
 		    android:gravity="center_horizontal" />
 
 	</LinearLayout>

@@ -81,4 +81,11 @@ public class CustomActivity extends Activity
         }
         return true;
     }
+    
+    public int convertToPixels(int dp)
+    {
+    	final float scale = this.getResources().getDisplayMetrics().density;
+    	int pixels = (int) (dp * scale + 0.5f);
+    	return pixels;
+    }
 }
