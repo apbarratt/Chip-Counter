@@ -46,15 +46,18 @@
 		android:layout_margin="10dp">
 	</Button>
 	
-	<TextView  
+	<Button
+		android:id="@+id/btnWebsite"
 	    android:layout_width="fill_parent" 
-	    android:layout_height="fill_parent" 
+	    android:layout_height="wrap_content" 
 	    android:text="@string/websiteURL"
 	    android:textColor="#ffffff"
 	    android:textSize="14dp"
 	    android:typeface="sans"
 	    android:padding="5dp"
-	    android:gravity="center_horizontal|bottom"/>
+	    android:gravity="center_horizontal|bottom"
+	    android:background="@drawable/link">
+	</Button>
 		    
 </LinearLayout>
 	    

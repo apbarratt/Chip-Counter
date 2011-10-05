@@ -21,31 +21,36 @@ public final class R {
         public static final int green=0x7f020007;
         public static final int icon=0x7f020008;
         public static final int lightblue=0x7f020009;
-        public static final int orange=0x7f02000a;
-        public static final int pink=0x7f02000b;
-        public static final int purple=0x7f02000c;
-        public static final int red=0x7f02000d;
-        public static final int titlebackground=0x7f02000e;
-        public static final int white=0x7f02000f;
-        public static final int yellow=0x7f020010;
+        public static final int link=0x7f02000a;
+        public static final int linkfocused=0x7f02000b;
+        public static final int linknormal=0x7f02000c;
+        public static final int linkpressed=0x7f02000d;
+        public static final int orange=0x7f02000e;
+        public static final int pink=0x7f02000f;
+        public static final int purple=0x7f020010;
+        public static final int red=0x7f020011;
+        public static final int titlebackground=0x7f020012;
+        public static final int white=0x7f020013;
+        public static final int yellow=0x7f020014;
     }
     public static final class id {
-        public static final int blackValue=0x7f06000c;
-        public static final int blueValue=0x7f060003;
+        public static final int blackValue=0x7f06000d;
+        public static final int blueValue=0x7f060004;
         public static final int btnCalculate=0x7f060001;
-        public static final int btnSaveValues=0x7f06000e;
-        public static final int btnSetValues=0x7f060002;
+        public static final int btnSaveValues=0x7f06000f;
+        public static final int btnSetValues=0x7f060003;
+        public static final int btnWebsite=0x7f060002;
         public static final int chips=0x7f060000;
-        public static final int grayValue=0x7f06000d;
-        public static final int greenValue=0x7f060004;
-        public static final int lightblueValue=0x7f060005;
-        public static final int menuSetValues=0x7f06000f;
-        public static final int orangeValue=0x7f060006;
-        public static final int pinkValue=0x7f060007;
-        public static final int purpleValue=0x7f060008;
-        public static final int redValue=0x7f060009;
-        public static final int whiteValue=0x7f06000b;
-        public static final int yellowValue=0x7f06000a;
+        public static final int grayValue=0x7f06000e;
+        public static final int greenValue=0x7f060005;
+        public static final int lightblueValue=0x7f060006;
+        public static final int menuSetValues=0x7f060010;
+        public static final int orangeValue=0x7f060007;
+        public static final int pinkValue=0x7f060008;
+        public static final int purpleValue=0x7f060009;
+        public static final int redValue=0x7f06000a;
+        public static final int whiteValue=0x7f06000c;
+        public static final int yellowValue=0x7f06000b;
     }
     public static final class layout {
         public static final int main=0x7f030000;

@@ -91,5 +91,6 @@ public class setValuesActivity extends CustomActivity
                 startActivityForResult(myIntent, 0);
     		}
     	});
+    	createLinkListener();
     }
 }

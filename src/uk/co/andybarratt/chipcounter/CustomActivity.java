@@ -6,11 +6,15 @@ import java.text.DecimalFormat;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class CustomActivity extends Activity
 {
@@ -87,5 +91,18 @@ public class CustomActivity extends Activity
     	final float scale = this.getResources().getDisplayMetrics().density;
     	int pixels = (int) (dp * scale + 0.5f);
     	return pixels;
+    }
+    
+    public void createLinkListener()
+    {
+    	final Button btnLink = (Button) findViewById(R.id.btnWebsite); //initialise set values button
+    	btnLink.setOnClickListener(new OnClickListener() {
+    		@Override
+    		public void onClick(final View view) {
+    			Log.d(TAG, "Website button pressed.");
+    			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.andybarratt.co.uk/chip-counter-for-android"));
+    			startActivity(browserIntent);
+    		}
+    	});
     }
 }

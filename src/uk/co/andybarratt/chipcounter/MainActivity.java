@@ -83,6 +83,7 @@ public class MainActivity extends CustomActivity
         		}
         	});
         }
+        createLinkListener();
     }
     
     public void calculate(EditText [] numChips)
