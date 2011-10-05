@@ -47,12 +47,15 @@ public class MainActivity extends CustomActivity
         	
         	final EditText [] numChips = new EditText[11];
         	
+        	//create and set layout parameters for margins
+        	LinearLayout.LayoutParams imageMargin = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        	imageMargin.setMargins(0, 0, convertToPixels(10), 0);
+        	
         	for(int i=0; i<11; i++)
         	{
-        		int pixels = convertToPixels(50);
         		numChips[i] = new EditText(this);
 					numChips[i].setHint(getString(R.string.numChips));
-					numChips[i].setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, pixels));
+					numChips[i].setLayoutParams(new LinearLayout.LayoutParams(LayoutParams.FILL_PARENT, convertToPixels(50)));
 					numChips[i].setInputType(InputType.TYPE_CLASS_NUMBER);
 					
         		if(chips[i].getValue()>0)
@@ -60,7 +63,8 @@ public class MainActivity extends CustomActivity
         			ImageView chipImage = new ImageView(this);
         				chipImage.setImageResource(chips[i].getDrawable());
         				chipImage.setAdjustViewBounds(true);
-        				chipImage.setMaxWidth(pixels);
+        				chipImage.setMaxWidth(convertToPixels(50));
+        				chipImage.setLayoutParams(imageMargin);
         			
 	        		LinearLayout chip = new LinearLayout(this);
 	        			chip.setPadding(10,10,10,10);
@@ -101,17 +105,17 @@ public class MainActivity extends CustomActivity
     	
     	String formattedTotal = dec.format(total);
     	
-    	final AlertDialog alertDialog = new AlertDialog.Builder(this).create(); // make an alert dialogue		
-		alertDialog.setTitle(getString(R.string.total));
-		alertDialog.setMessage(formattedTotal);
-		
-		alertDialog.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+    	final AlertDialog totalDialogue = new AlertDialog.Builder(this).create(); // make an alert dialogue		
+		totalDialogue.setTitle(getString(R.string.total));
+		totalDialogue.setMessage(formattedTotal);
+		totalDialogue.setIcon(R.drawable.icon);
+		totalDialogue.setButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				alertDialog.dismiss();
+				totalDialogue.dismiss();
 			}
 		});
 		
-		alertDialog.show();
+		totalDialogue.show();
     }
 }
