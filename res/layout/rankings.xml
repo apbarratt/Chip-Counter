@@ -479,7 +479,7 @@
 				<ImageView
 					android:layout_height="wrap_content"
 					android:layout_width="fill_parent"
-					android:src="@drawable/spade_3"
+					android:src="@drawable/spade_4"
 					android:layout_weight="1">
 				</ImageView>
 		</LinearLayout>

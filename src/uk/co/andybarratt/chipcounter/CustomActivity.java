@@ -37,7 +37,7 @@ public class CustomActivity extends Activity
     {
     	boolean chipsSet = false;
     	//open settings Shared Preferences
-    	settings = getSharedPreferences("ChipCounterValues", 0);
+    	settings = getSharedPreferences("ChipCounterValues", 1);  //increment this by one if drawables have been changed.
     	Log.d(TAG, "settings initialised");
     	
         for(int i=0; i<11; i++)

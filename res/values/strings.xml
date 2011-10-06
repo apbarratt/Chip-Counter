@@ -10,7 +10,7 @@
     <string name="saveValues">Save Values</string>
     <string name="total">Your Total</string>
     <string name="ok">OK</string>
-    <string name="cardRankings">Poker Card Rankings</string>
+    <string name="cardRankings">Poker Hand Rankings</string>
     
     <!-- Card Rankings -->
     <string name="royalFlush">Royal Flush</string>
