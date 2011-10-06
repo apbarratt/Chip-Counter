@@ -75,10 +75,16 @@ public class CustomActivity extends Activity
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+    	Intent myIntent;
         switch(item.getItemId()) {
             case R.id.menuSetValues:
             	Log.d(TAG, "Set Chip Values menu button pressed.");
-    			Intent myIntent = new Intent(this, setValuesActivity.class);
+    			myIntent = new Intent(this, SetValuesActivity.class);
+                startActivityForResult(myIntent, 0);
+                break;
+            case R.id.menuCardRankings:
+            	Log.d(TAG, "Set Chip Values menu button pressed.");
+    			myIntent = new Intent(this, Ranking.class);
                 startActivityForResult(myIntent, 0);
                 break;
             default:

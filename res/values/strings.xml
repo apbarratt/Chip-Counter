@@ -10,4 +10,17 @@
     <string name="saveValues">Save Values</string>
     <string name="total">Your Total</string>
     <string name="ok">OK</string>
+    <string name="cardRankings">Poker Card Rankings</string>
+    
+    <!-- Card Rankings -->
+    <string name="royalFlush">Royal Flush</string>
+    <string name="straightFlush">Straight Flush</string>
+    <string name="fourOfAKind">Four of a Kind</string>
+    <string name="fullHouse">Full House</string>
+    <string name="flush">Flush</string>
+    <string name="straight">Straight</string>
+    <string name="threeOfAKind">Three of a Kind</string>
+    <string name="twoPair">Two Pair</string>
+    <string name="onePair">One Pair</string>
+    <string name="highCards">High Cards</string>
 </resources>

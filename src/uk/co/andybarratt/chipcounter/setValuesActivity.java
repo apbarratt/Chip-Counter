@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-public class setValuesActivity extends CustomActivity
+public class SetValuesActivity extends CustomActivity
 {
 	
     /** Called when the activity is first created. */

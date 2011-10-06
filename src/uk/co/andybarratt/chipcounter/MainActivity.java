@@ -34,7 +34,7 @@ public class MainActivity extends CustomActivity
         		@Override
         		public void onClick(final View view) {
         			Log.d(TAG, "Set Chip Values button pressed.");
-        			Intent myIntent = new Intent(view.getContext(), setValuesActivity.class);
+        			Intent myIntent = new Intent(view.getContext(), SetValuesActivity.class);
 	                startActivityForResult(myIntent, 0);
         		}
         	});
