@@ -24,17 +24,6 @@ public class SetValuesActivity extends CustomActivity
         setContentView(R.layout.values);
         
         loadChipValues();
-        chips[0].setDrawable(R.drawable.blue);
-        chips[1].setDrawable(R.drawable.green);
-        chips[2].setDrawable(R.drawable.lightblue);
-        chips[3].setDrawable(R.drawable.orange);
-        chips[4].setDrawable(R.drawable.pink);
-        chips[5].setDrawable(R.drawable.purple);
-        chips[6].setDrawable(R.drawable.red);
-        chips[7].setDrawable(R.drawable.yellow);
-        chips[8].setDrawable(R.drawable.white);
-        chips[9].setDrawable(R.drawable.black);
-        chips[10].setDrawable(R.drawable.gray);
         
         final EditText [] values = new EditText [11];
         

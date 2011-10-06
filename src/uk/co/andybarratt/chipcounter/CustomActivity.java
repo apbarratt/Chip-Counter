@@ -44,17 +44,28 @@ public class CustomActivity extends Activity
         {
         	//create unique names for chip data
         	String valueName = "value" + i;
-        	String drawableName = "drawable" + i;
         	
         	//get data from settings object and read it, set defaults where values not available
         	float chipValue = settings.getFloat(valueName, 0);
-        	int chipDrawable = settings.getInt(drawableName, 0);
+
         	
         	//put data into chips array.
-        	chips[i] = new Chip(chipDrawable, chipValue);
+        	chips[i] = new Chip(0, chipValue);
         	if(chipValue!=0)
         		chipsSet=true;
         }
+        
+        chips[0].setDrawable(R.drawable.blue);
+        chips[1].setDrawable(R.drawable.green);
+        chips[2].setDrawable(R.drawable.lightblue);
+        chips[3].setDrawable(R.drawable.orange);
+        chips[4].setDrawable(R.drawable.pink);
+        chips[5].setDrawable(R.drawable.purple);
+        chips[6].setDrawable(R.drawable.red);
+        chips[7].setDrawable(R.drawable.yellow);
+        chips[8].setDrawable(R.drawable.white);
+        chips[9].setDrawable(R.drawable.black);
+        chips[10].setDrawable(R.drawable.gray);
         
         return chipsSet;
     }
