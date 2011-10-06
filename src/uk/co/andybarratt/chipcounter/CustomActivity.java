@@ -93,8 +93,9 @@ public class CustomActivity extends Activity
     	return pixels;
     }
     
-    public void createLinkListener()
-    {
+    public void addLinkListener()
+    {	
+    	//add listener to web address button
     	final Button btnLink = (Button) findViewById(R.id.btnWebsite); //initialise set values button
     	btnLink.setOnClickListener(new OnClickListener() {
     		@Override

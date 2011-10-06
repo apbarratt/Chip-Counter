@@ -8,6 +8,7 @@ import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -21,6 +22,7 @@ public class MainActivity extends CustomActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //remove the android title bar
         
         Log.d(TAG, "Checking number of chips");
         if(loadChipValues()==false)
@@ -83,7 +85,7 @@ public class MainActivity extends CustomActivity
         		}
         	});
         }
-        createLinkListener();
+        addLinkListener();
     }
     
     public void calculate(EditText [] numChips)
